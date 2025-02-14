@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>宏发门窗</title>
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        background-color: #eee;
+        font-family: Arial, sans-serif;
+      }
+      .flex {
+        display: flex;
+      }
+      .baise {
+        background-color: white;
+      }
+      .flex1 {
+        flex: 1;
+      }
+      .column {
+        flex-direction: column;
+      }
+      .mg8 {
+        margin: 8px;
+      }
+      .mgr8 {
+        margin-right: 8px;
+      }
+      .mgt8 {
+        margin-top: 8px;
+      }
+      .suoyin {
+        padding: 10px 20px;
+        border-bottom: 1px solid #ccc;
+        font-size: 20px;
+        color: black;
+      }
+      .kapian {
+        width: 100%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        text-align: center;
+      }
+      .container {
+        padding: 20px;
+      }
+      /* 手机查看时 */
+      @media (max-width: 600px) {
+        .cebian {
+          display: none;
+        }
+        .shu {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+
+  <body class="flex">
+    <!-- 侧边栏 -->
+    <div style="width: 200px; z-index: 2" class="baise cebian">
+      <!-- 小商标 -->
+      <div class="flex" style="padding: 10px; align-items: center; flex-direction: column; justify-content: center; border-bottom: 1px solid #999;">
+        <img src="images\products\1.png" width="100%" height="100px" alt="宏发" />
+        <div style="margin-top: 10px">宏发门窗</div>
+      </div>
+      <!-- 索引栏 -->
+      <div class="flex1">
+        <div class="suoyin">入户门</div>
+        <div class="suoyin">房间门</div>
+        <div class="suoyin">厨卫门</div>
+        <div class="suoyin">铺面及消防用门</div>
+        <div class="suoyin">窗户 窗花 纱窗</div>
+        <div class="suoyin">定制类不锈钢 铝合金产品</div>
+        <div class="suoyin">色卡</div>
+      </div>
+    </div>
+    <!-- 主界面 -->
+    <div class="flex1 flex column">
+      <!-- 头部栏 -->
+      <div class="flex shu baise" style="height: 150px; z-index: 1; align-items: center; justify-content: center;">
+        <div style="font-size: 60px;">宏 发 门 窗</div>
+        <div class="flex" style="padding: 10px; align-items: center; flex-direction: column; justify-content: center; border-bottom: 1px solid #999;">
+          <img src="images\products\2.png" width="100px" height="100px" alt="宏发" />
+          <div style="margin-top: 10px">联系我们</div>
+        </div>
+      </div>
+      <!-- 内容栏 -->
+      <div style="overflow: auto" class="flex1 flex shu">
+        <!-- 产品区 -->
+        <div style="flex: 4" class="flex column mg8 shu">
+          <!-- 入户门 -->
+          <div class="flex mgt8 shu">
+            <div class="flex1 baise mgr8 kapian" style="height: 400px;">
+              <img src="images\products\3.png" height="350px" width="100%" alt="不锈钢入户门" />
+              <div class="container">不锈钢入户门</div>
+            </div>
+            <div class="flex1 baise mgr8 kapian" style="height: 400px;">
+              <img src="images\products\4.png" height="350px" width="100%" alt="锌合金入户门" />
+              <div class="container">锌合金入户门</div>
+            </div>
+            <div class="flex1 baise mgr8 kapian" style="height: 400px;">
+              <img src="images\products\5.png" height="350px" width="100%" alt="安全门" />
+              <div class="container">安全门</div>
+            </div>
+            <div class="flex1 baise kapian" style="height: 400px;">
+              <img src="images\products\6.png" height="350px" width="100%" alt="铜门" />
+              <div class="container">铜门</div>
+            </div>
+          </div>
+          <!-- 房间门 -->
+          <div class="flex mgt8 shu">
+            <div class="flex1 baise mgr8 kapian" style="height: 400px;">
+              <img src="images\products\7.png" height="350px" width="100%" alt="铝合金房门" />
+              <div class="container">铝合金房门</div>
+            </div>
+            <div class="flex1 baise mgr8 kapian" style="height: 400px;">
+              <img src="images\products\8.png" height="350px" width="100%" alt="锌合金房门" />
+              <div class="container">锌合金房门</div>
+            </div>
+            <div class="flex1 baise mgr8 kapian" style="height: 400px;">
+              <img src="images\products\9.png" height="350px" width="100%" alt="不锈钢房门" />
+              <div class="container">不锈钢房门</div>
+            </div>
+            <div class="flex1 baise kapian" style="height: 400px;">
+              <img src="images\products\10.png" height="350px" width="100%" alt="木门" />
+              <div class="container">木门</div>
+            </div>
+          </div>
+          <!-- 厨卫门 -->
+          <div class="flex shu">
+            <div class="flex1 baise mgr8 mgt8 kapian" style="height: 400px;">
+              <img src="images\products\11.png" height="175px" width="100%" alt="铝合金单门" />
+              <img src="images\products\12.png" height="175px" width="100%" alt="铝合金单门" />
+              <div class="container">铝合金单门</div>
+            </div>
+            <div class="flex1 baise mgr8 mgt8 kapian" style="height: 400px;">
+              <img src="images\products\13.png" height="175px" width="100%" alt="铝合金极窄系列单门" />
+              <img src="images\products\14.png" height="175px" width="100%" alt="铝合金极窄系列单门，移门" />
+              <div class="container">铝合金极窄系列单门，移门</div>
+            </div>
+            <div class="flex1 baise mgr8 mgt8 kapian" style="height: 400px;">
+              <img src="images\products\15.png" height="175px" width="100%" alt="铝合金推拉门" />
+              <img src="images\products\16.png" height="175px" width="100%" alt="淋浴房" />
+              <div class="container">铝合金推拉门，淋浴房</div>
+            </div>
+            <div class="flex1 baise mgt8 kapian" style="height: 400px;">
+              <img src="images\products\17.png" height="350px" width="100%" alt="铝合金折叠门" />
+              <div class="container">铝合金折叠门</div>
+            </div>
+          </div>
+          <!-- 铺面及其他门 -->
+          <div class="flex mgt8 shu">
+            <div class="flex1 baise mgr8 kapian" style="height: 400px;">
+              <img src="images\products\18.png" height="350px" width="100%" alt="不锈钢拉闸门" />
+              <div class="container">不锈钢拉闸门</div>
+            </div>
+            <div class="flex1 baise mgr8 kapian" style="height: 400px;">
+              <img src="images\products\19.png" height="350px" width="100%" alt="卷闸门" />
+              <div class="container">卷闸门</div>
+            </div>
+            <div class="flex1 baise mgr8 kapian" style="height: 400px;">
+              <img src="images\products\20.png" height="350px" width="100%" alt="钢制防火门" />
+              <div class="container">钢制防火门</div>
+            </div>
+            <div class="flex1 baise kapian" style="height: 400px;">
+              <img src="images\products\21.png" height="350px" width="100%" alt="玻璃防火门" />
+              <div class="container">玻璃防火门</div>
+            </div>
+          </div>
+          <!-- 窗户 窗花 纱窗 -->
+          <div class="flex mgt8 shu">
+            <div class="flex1 baise mgr8 kapian" style="height: 400px;">
+              <img src="images\products\22.png" height="350px" width="100%" alt="移窗" />
+              <div class="container">移窗</div>
+            </div>
+            <div class="flex1 baise mgr8 kapian" style="height: 400px;">
+              <img src="images\products\23.png" height="350px" width="100%" alt="断桥铝" />
+              <div class="container">断桥铝</div>
+            </div>
+            <div class="flex1 baise mgr8 kapian" style="height: 400px;">
+              <img src="images\products\24.png" height="175px" width="100%" alt="纱窗" />
+              <img src="images\products\25.png" height="175px" width="100%" alt="纱门" />
+              <div class="container">防蚊纱窗，纱门</div>
+            </div>
+            <div class="flex1 baise kapian" style="height: 400px;">
+              <img src="images\products\26.png" height="350px" width="100%" alt="铝窗花" />
+              <div class="container">铝窗花</div>
+            </div>
+          </div>
+          <!-- 商业门类 -->
+          <div id="shangye" class="anchor"></div>
+          <div class="flex mgt8 shu">
+            <div class="flex1 baise mgr8 kapian" style="height: 400px;">
+              <img src="images\products\18.png" height="350px" width="100%" alt="不锈钢拉闸门" />
+              <div class="container">不锈钢拉闸门</div>
+            </div>
+            <div class="flex1 baise mgr8 kapian" style="height: 400px;">
+              <img src="images\products\19.png" height="350px" width="100%" alt="卷闸门" />
+              <div class="container">卷闸门</div>
+            </div>
+            <div class="flex1 baise mgr8 kapian" style="height: 400px;">
+              <img src="images\products\20.png" height="350px" width="100%" alt="钢制防火门" />
+              <div class="container">钢制防火门</div>
+            </div>
+            <div class="flex1 baise kapian" style="height: 400px;">
+              <img src="images\products\21.png" height="350px" width="100%" alt="玻璃防火门" />
+              <div class="container">玻璃防火门</div>
+            </div>
+          </div>
+          <!-- 杂项 -->
+          <div class="flex mgt8 shu">
+            <div class="flex1 baise mgr8 kapian" style="height: 400px;">
+              <img src="images\products\27.png" height="350px" width="100%" alt="隐形防盗网" />
+              <div class="container">隐形防盗网</div>
+            </div>
+            <div class="flex1 baise mgr8 kapian" style="height: 400px;">
+              <img src="images\products\28.png" height="350px" width="100%" alt="不锈钢防盗网 扶手 架子 定做" />
+              <div class="container">不锈钢防盗网 扶手 架子 定做</div>
+            </div>
+            <div class="flex1 baise mgr8 kapian" style="height: 400px;">
+              <img src="images\products\29.png" height="350px" width="100%" alt="夹芯板隔断 铝合金隔断 玻璃隔断 地弹簧" />
+              <div>夹芯板隔断 铝合金隔断 玻璃隔断 地弹簧</div>
+            </div>
+            <div class="flex1 baise kapian" style="height: 400px;">
+              <img src="images\products\30.png" height="350px" width="100%" alt="阳光房" />
+              <div class="container">阳光房</div>
+            </div>
+          </div>
+        </div>
+        <!-- 色卡区 -->
+        <div style="flex: 1" class="flex column mg8 cebian">
+          <div class="baise mgt8 kapian" style="height: 200px;">
+            <img src="<图片31>" width="200px" height="150px" alt="宏发" />
+            <div class="container">联系我们</div>
+          </div>
+          <div class="baise kapian" style="height: 200px;">
+            <img src="<图片32>" height="150px" width="200px" alt="木门色卡" />
+            <div>木门色卡(颜色与实物有色差,以实物颜色为准)</div>
+          </div>
+          <div class="baise mgt8 kapian" style="height: 200px;">
+            <img src="<图片33>" height="150px" width="200px" alt="铝合金门色卡" />
+            <div>铝合金门色卡(颜色与实物有色差,以实物颜色为准)</div>
+          </div>
+          <div class="baise mgt8 kapian" style="height: 200px;">
+            <img src="<图片34>" height="150px" width="200px" alt="不锈钢门色卡" />
+            <div>不锈钢门色卡(颜色与实物有色差,以实物颜色为准)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
